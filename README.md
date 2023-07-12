@@ -6,4 +6,4 @@
 
 ## Padrão camadas
 
-![Padrão camadas CadProduto]([./imgReadme/padraodecamadas.png])
+![Padrão camadas CadProduto](imgReadme/padraodecamadas.png)
