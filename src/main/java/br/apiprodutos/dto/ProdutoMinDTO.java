@@ -1,6 +1,7 @@
 package br.apiprodutos.dto;
 
 import br.apiprodutos.entities.Produto;
+import br.apiprodutos.projections.ProdutoMinProjection;
 
 public class ProdutoMinDTO {
 	
@@ -19,6 +20,14 @@ public class ProdutoMinDTO {
 		valorProduto = entity.getValorProduto();
 		unidadeMedidaProduto = entity.getUnidadeMedidaProduto();
 		imageUrlProduto = entity.getImageUrlProduto();
+	}
+	
+	public ProdutoMinDTO(ProdutoMinProjection projection) {
+		id = projection.getId();
+		nomeProduto = projection.getNomeProduto();
+		valorProduto = projection.getValorProduto();
+		unidadeMedidaProduto = projection.getUnidadeMedidaProduto();
+		imageUrlProduto = projection.getImageUrlProduto();
 	}
 
 	public Long getId() {
